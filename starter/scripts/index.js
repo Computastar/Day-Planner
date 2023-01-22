@@ -1,3 +1,4 @@
+
 // Add current Day time to header
 
 var today = dayjs();
@@ -35,5 +36,12 @@ function timeBlock() {
 
 // Save the time block
 
+$(".saveBtn").click(function(){
+    var hour = $(this).parent().attr("id");
+    var hourlyTask = $(this).siblings(".description").val();
+    console.log(hour + " " + hourlyTask)
+    localStorage.setItem(hour,hourlyTask);
+
+})
 
 timeBlock();
