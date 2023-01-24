@@ -1,4 +1,4 @@
-# Module 7: Day Pplanner
+# Module 7: Day Planner
 
 ## Overview
 
