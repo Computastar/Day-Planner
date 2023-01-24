@@ -83,5 +83,10 @@ You are required to submit the following for review:
 
 * The URL of the GitHub repository, with a unique name and a README describing the project
 
----
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+**Website Screenshot**
+![Day Planner!](/assets/images/05-third-party-apis-homework-demo.gif "Day Planner website")
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
