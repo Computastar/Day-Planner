@@ -1,10 +1,11 @@
-# Third-Party APIs: Work Day Scheduler
+# Module 7: Day Pplanner
 
-## Your Task
+## Overview
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+To create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+The criteria specified to use the [Moment.js](https://momentjs.com/) library to work with date and time. After consultation with the tutor, it was decided that any Date/Time library would be allowed. Given Moment.js is no longer supported I decided to go with [dayjs.js](https://day.js.org). I initially thought that dayjs would be simpler to use, I got the comparisons working using standard equals, greater than, less than operators, but using the dayjs objects turned out to be a bit trickier. Firstly, you need to convert the string object to a standard js Date obj, this gives you the correct date format that dayjs is expecting, then you can create dayjs objects from there. Once you have the dayjs objects you can use the isSame, isBefore and isAfter dayjs functions for comparison. The functionality worked just fine using the normal comparison operators, but as this was an exercise in using third part APIs, I wanted to use the dayjs library, the documentation is not particularly comprehensive, and the fact it needed the correct date object passing in tripped me for a while. I did try to extend the functionality by making it multi day but for whatever reason the isBefore and isAfter function flipped on previous and future days, will investigate further when I have time, but after a day looking at it , it was more important to submit than add extra functions.
+
 
 ## User Story
 
@@ -83,7 +84,10 @@ You are required to submit the following for review:
 
 * The URL of the GitHub repository, with a unique name and a README describing the project
 
+---
+
 **Website Screenshot**
+
 ![Day Planner!](/assets/images/05-third-party-apis-homework-demo.gif "Day Planner website")
 
 ## License
